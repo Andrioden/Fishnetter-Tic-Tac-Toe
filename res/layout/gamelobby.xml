@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:background="@drawable/backgrunn">
+    <TextView android:layout_width="wrap_content" android:text="Your ip: 10.20.20.10" android:layout_height="wrap_content" android:id="@+id/hostIP"></TextView>
+    <TextView android:id="@+id/currentplayersText" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Current players (0):" android:layout_gravity="center"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/playerlistLayout" android:orientation="vertical" android:background="@drawable/lobby_border"></LinearLayout>
+    <TextView android:layout_width="wrap_content" android:text="@string/waitingPlayers" android:layout_height="wrap_content" android:id="@+id/waitConnectText"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout1">
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_startgame" android:id="@+id/starthostgameButton" android:onClick="lobbyGameStart" android:visibility="invisible"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

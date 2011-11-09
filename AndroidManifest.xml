@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="bonde.sjakk"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="8"></uses-sdk>
+	
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="false">
+        <activity android:name="bondesjakk.activities.MenuActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="bondesjakk.activities.GameActivity"></activity>
+        <activity android:name="bondesjakk.activities.HeadsupGameActivity"></activity>
+        <activity android:name="bondesjakk.activities.HostGameActivity"></activity>
+        <activity android:name="bondesjakk.activities.JoinGameActivity"></activity>
+		<activity android:name="bondesjakk.activities.SettingsActivity"></activity>
+    </application>
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgrunn" android:orientation="horizontal">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_gravity="center|top" android:layout_marginTop="70dip">
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_headsup" android:id="@+id/imageButton1" android:onClick="startHeadsUpGame" android:layout_gravity="center"></ImageButton>
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_host" android:id="@+id/imageButton2" android:onClick="startHostGame" android:layout_gravity="center"></ImageButton>
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_join" android:id="@+id/imageButton3" android:onClick="startJoinGame" android:layout_gravity="center"></ImageButton>
+    </LinearLayout>
+</LinearLayout>

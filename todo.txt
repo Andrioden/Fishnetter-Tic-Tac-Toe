@@ -1,0 +1,11 @@
+Improvements:
+- Add a special rule: Only able to apply close to already tagged squares.
+- Enlarge and centralize text in game lobby.
+Bugs:
+- Scaling at very different height and width is weird.
+
+VERSION 2: If I ever consider the game to be expanded upon
+----------------
+- If someone disconnect they can reconnect, this can be done by checking their IP.
+- Can kick player.
+- Still a few issues with connecting to a host, seems like not all settings are sendt everytime.

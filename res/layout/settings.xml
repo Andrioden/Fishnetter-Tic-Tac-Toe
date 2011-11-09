@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgrunn">
+    <TextView android:id="@+id/setsettingsText" android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/setSettings"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/playercountLayout" android:layout_margin="10dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/relativeLayout1">
+            <SeekBar android:id="@+id/playercountSeekBar" android:layout_height="wrap_content" android:layout_width="175dip"></SeekBar>
+        </RelativeLayout>
+        <TextView android:text=" 2 " android:id="@+id/playercountNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="5dip" android:layout_y="12dip" android:id="@+id/playercountText" android:text="@string/playerCount" android:layout_gravity="center"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/aiplayerLayout" android:layout_margin="10dip">
+        <RelativeLayout android:id="@+id/RelativeLayout01" android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <SeekBar android:layout_width="175dip" android:layout_height="wrap_content" android:id="@+id/aiplayerSeekBar"></SeekBar>
+        </RelativeLayout>
+        <TextView android:layout_gravity="center" android:text=" 0 " android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/aiplayerNumber"></TextView>
+        <TextView android:layout_gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/aiplayerCount" android:id="@+id/aiplayerText"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/widthAL" android:layout_margin="10dip">
+        <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout3" android:layout_width="175dip">
+            <SeekBar android:id="@+id/widthtSeekBar" android:layout_alignParentLeft="true" android:layout_width="match_parent" android:layout_height="wrap_content"></SeekBar>
+        </RelativeLayout>
+        <TextView android:text=" 3 " android:id="@+id/widthNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_y="22dip" android:layout_x="3dip" android:text="@string/gameWidth" android:layout_gravity="center" android:id="@+id/widthText"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/heightAL" android:layout_margin="10dip">
+        <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout4" android:layout_width="175dip">
+            <SeekBar android:id="@+id/heightSeekBar" android:layout_alignParentLeft="true" android:layout_width="match_parent" android:layout_height="wrap_content"></SeekBar>
+        </RelativeLayout>
+        <TextView android:text=" 3 " android:id="@+id/heightNumberText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></TextView>
+    	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_x="3dip" android:layout_y="13dip" android:text="@string/gameHeight" android:layout_gravity="center" android:id="@+id/heightText"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/victoryAL" android:layout_margin="10dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/relativeLayout2">
+            <SeekBar android:id="@+id/victorySeekBar" android:layout_alignParentLeft="true" android:layout_width="175dip" android:layout_height="wrap_content"></SeekBar>
+        </RelativeLayout>
+        <TextView android:id="@+id/victoryNumberText" android:layout_width="wrap_content" android:layout_gravity="center" android:text=" 3 " android:layout_height="wrap_content"></TextView>
+        <TextView android:id="@+id/victoryText" android:layout_width="wrap_content" android:layout_gravity="center" android:text="@string/gameVictory" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/linearLayout2" android:orientation="horizontal">
+        <RadioGroup android:layout_height="match_parent" android:layout_width="wrap_content" android:orientation="horizontal" android:id="@+id/gameModeRG">
+            <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:text="@string/gameMode" android:layout_height="wrap_content"></TextView>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/normal" android:id="@+id/gameModeOne"></RadioButton>
+            <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/drop" android:id="@+id/gameModeTwo"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1">
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/button_startgame" android:onClick="startGame" android:id="@+id/startgameButton"></ImageButton>
+    </LinearLayout>
+</LinearLayout>
